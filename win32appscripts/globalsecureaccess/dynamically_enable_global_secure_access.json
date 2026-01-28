@@ -1,0 +1,8 @@
+{
+"_comment": "change the values below according to your environment",
+"imagePath": "C:\\Scripts\\helpfiles\\images\\gsa_client.png",
+"fqdnToResolve": "my-site.example.net",
+"expectedIp": "192.168.14.5",
+"dnsServerIp": "10.0.0.1",
+"pingHostIp": "10.0.0.2"
+}
