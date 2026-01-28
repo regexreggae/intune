@@ -1,5 +1,5 @@
 <#PSScriptInfo
-.VERSION 1.1.0
+.VERSION 1.1.1
 .GUID f0e560f3-0088-40e4-a29f-f86caacc2da5
 .AUTHOR regexreggae
 .DESCRIPTION dynamically enable Global Secure Access tunnelling depending on location (on-site vs off-site)
@@ -44,7 +44,7 @@ param(
 ### static core parameters
 # paths
 $detectionFilePath = "C:\Program Files\Global Secure Access Client\GlobalSecureAccessClientManagerService.exe"
-if ($configFilePath -eq "") {$configFilePath = $($myinvocation.MyCommand.Path) -replace "\.ps1", ".json"}
+if ($configFilePath -eq "") {$configFilePath = $($myinvocation.MyCommand.Path) -replace "\.script\.ps1", ".config.json"}
 # networking / GSA stuff
 $maxTriesForNetworkCheck = 10
 $gsaSvcNames = @(
