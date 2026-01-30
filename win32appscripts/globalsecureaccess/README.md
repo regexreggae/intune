@@ -1,5 +1,9 @@
 # Dynamically enable Global Secure Access (GSA) – PowerShell 🚀
 
+> [!IMPORTANT]
+> Using this will disable the GSA client altogether when on-premises. With Microsoft's **Intelligent Local Access** feature, using such a workaround has become obsolete.
+> If you can, consider using ILA instead ([more info on ILA](https://learn.microsoft.com/en-us/entra/global-secure-access/enable-intelligent-local-access))
+
 This solution **dynamically enables Microsoft Global Secure Access tunnelling depending on location**
 (**on-site vs off-site**). When the device is considered **off-site**, the script **starts the GSA services**.
 When the device is **on-site**, it can optionally **stop** the services. ✅
